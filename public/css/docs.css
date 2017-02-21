@@ -1,8 +1,7 @@
 .masthead {
   height: 100vh;
   overflow: hidden;
-  position: relative;
-}
+  position: relative; }
 
 .masthead::before {
   content: ' ';
@@ -15,26 +14,23 @@
   background: url("../img/wazehlrp98s-jamison-mcandie.jpg") no-repeat bottom center;
   background-size: cover;
   will-change: transform;
-  z-index: -1;
-}
+  z-index: -1; }
 
 .brand-set__logo {
-  margin-bottom: 2.4rem;
-}
+  margin-bottom: 2.4rem; }
 
 /* Example Grid */
 .grid-example .grid__column {
   border: 1px solid #555;
   padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-}
+  padding-bottom: 0.8rem; }
 
 /**
  * Github link
  */
 .github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out; }
 
 .github-corner {
   fill: #3D9970;
@@ -43,42 +39,58 @@
   top: 0;
   border: 0;
   right: 0;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .github-corner:hover {
-  color: #F2F2F2;
-}
+  color: #F2F2F2; }
+
+@-webkit-keyframes octocat-wave {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  20% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
 
 @keyframes octocat-wave {
   0% {
-    transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
   20% {
-    transform: rotate(-25deg);
-  }
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
   40% {
-    transform: rotate(10deg);
-  }
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
   60% {
-    transform: rotate(-25deg);
-  }
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); }
   80% {
-    transform: rotate(10deg);
-  }
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
   100% {
-    transform: rotate(0deg);
-  }
-}
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
 
 @media (max-width: 500px) {
   .github-corner:hover .octo-arm {
-    animation: none;
-  }
+    -webkit-animation: none;
+            animation: none; }
   .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out; } }
 
 /* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css&plugins=unescaped-markup+normalize-whitespace */
 /**
@@ -103,8 +115,7 @@ pre[class*="language-"] {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
-  hyphens: none;
-}
+  hyphens: none; }
 
 /* Code blocks */
 pre[class*="language-"] {
@@ -113,30 +124,26 @@ pre[class*="language-"] {
   box-shadow: -1px 0px 0px 0px #0074D9, 0px 0px 0px 1px #dfdfdf;
   border-left: 10px solid #0074D9;
   background-color: #FDFDFD;
+  background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-size: 3em 3em;
   background-origin: content-box;
   overflow: visible;
-  padding: 0;
-}
+  padding: 0; }
 
 code[class*="language"] {
   max-height: inherit;
   height: 100%;
   padding: 0 1em;
   display: block;
-  overflow: auto;
-}
+  overflow: auto; }
 
 /* Margin bottom to accomodate shadow */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
   background-color: #FDFDFD;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-bottom: 1em;
-}
+  margin-bottom: 1em; }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
@@ -146,31 +153,24 @@ pre[class*="language-"] {
   color: #FF4136;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: inline;
-  white-space: normal;
-}
+  white-space: normal; }
 
 :not(pre) > code[class*="language-"]:after,
 pre[class*="language-"]:after {
   right: 0.75em;
   left: auto;
   -webkit-transform: rotate(2deg);
-  -moz-transform: rotate(2deg);
-  -ms-transform: rotate(2deg);
-  -o-transform: rotate(2deg);
-  transform: rotate(2deg);
-}
+  transform: rotate(2deg); }
 
 .token.comment,
 .token.block-comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #7D8B99;
-}
+  color: #7D8B99; }
 
 .token.punctuation {
-  color: #5F6364;
-}
+  color: #5F6364; }
 
 .token.property,
 .token.tag,
@@ -180,8 +180,7 @@ pre[class*="language-"]:after {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #FF4136;
-}
+  color: #FF4136; }
 
 .token.selector,
 .token.attr-name,
@@ -190,98 +189,79 @@ pre[class*="language-"]:after {
 .token.function,
 .token.builtin,
 .token.inserted {
-  color: #3D9970;
-}
+  color: #3D9970; }
 
 .token.operator,
 .token.entity,
 .token.url,
 .token.variable {
   color: #a67f59;
-  background: rgba(255, 255, 255, 0.5);
-}
+  background: rgba(255, 255, 255, 0.5); }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword,
 .token.class-name {
-  color: #0074D9;
-}
+  color: #0074D9; }
 
 .token.regex,
 .token.important {
-  color: #e90;
-}
+  color: #e90; }
 
 .language-css .token.string,
 .style .token.string {
   color: #a67f59;
-  background: rgba(255, 255, 255, 0.5);
-}
+  background: rgba(255, 255, 255, 0.5); }
 
 .token.important {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .token.bold {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .token.italic {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .token.entity {
-  cursor: help;
-}
+  cursor: help; }
 
 .namespace {
-  opacity: .7;
-}
+  opacity: .7; }
 
 @media screen and (max-width: 767px) {
   pre[class*="language-"]:before,
   pre[class*="language-"]:after {
     bottom: 14px;
-    box-shadow: none;
-  }
-}
+    box-shadow: none; } }
 
 /* Plugin styles */
 .token.tab:not(:empty):before,
 .token.cr:before,
 .token.lf:before {
-  color: #e0d7d1;
-}
+  color: #e0d7d1; }
 
 /* Plugin styles: Line Numbers */
 pre[class*="language-"].line-numbers {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 pre[class*="language-"].line-numbers code {
-  padding-left: 3.8em;
-}
+  padding-left: 3.8em; }
 
 pre[class*="language-"].line-numbers .line-numbers-rows {
-  left: 0;
-}
+  left: 0; }
 
 /* Plugin styles: Line Highlight */
 pre[class*="language-"][data-line] {
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 pre[data-line] code {
   position: relative;
-  padding-left: 4em;
-}
+  padding-left: 4em; }
 
 pre .line-highlight {
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 /* Fallback, in case JS does not run, to ensure the code is at least visible */
 .lang-markup script[type='text/plain'],
@@ -291,5 +271,4 @@ script[type='text/plain'].language-markup {
   display: block;
   font: 100% Consolas, Monaco, monospace;
   white-space: pre;
-  overflow: auto;
-}
+  overflow: auto; }
